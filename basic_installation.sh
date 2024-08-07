@@ -1,9 +1,15 @@
 
+## update package repositories
+sudo pacman-key --init
+sudo pacman-key --populate archlinux manjaro
+sudo pacman-mirrors -f && sudo pacman -Sy
+
 ## sublime 3
 curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syu sublime-text
 sudo pacman -S kolourpaint
+sudo pacman -S base-devel 
 
 ## AUR package  visual-studio-code-bin
 
@@ -23,5 +29,4 @@ docker-compose --version
 ## nvm
 # https://github.com/nvm-sh/nvm#verify-installation
 # https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
-
 

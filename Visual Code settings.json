@@ -1,0 +1,93 @@
+{
+    "files.trimTrailingWhitespace": true,
+    // "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Monokai ST3",
+    "workbench.editor.wrapTabs": true,
+    "editor.fontSize": 15,
+    "editor.renderWhitespace": "all",
+    //===
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 4
+    },
+    "[typescript]": {
+        "editor.tabSize": 4
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 4
+    },
+    //=======
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.colorCustomizations": {
+        // "tab.activeBackground": "#0d0d58",     // колір фону активної вкладки
+        "tab.activeForeground": "#ffffff", // колір тексту у вкладці
+        "tab.activeBorderTop": "#ffa600" // верхня рамка вкладки (для підсвітки)
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment.line" // comment or # comment
+                ],
+                "settings": {
+                    "foreground": "#75715e"
+                }
+            },
+            {
+                "scope": [
+                    "comment.block" /* comment */ // {{-- comment -}}
+                ],
+                "settings": {
+                    "foreground": "#75715e"
+                }
+            },
+            {
+                "scope": [
+                    "comment.block.documentation" /** comment */
+                ],
+                "settings": {
+                    "foreground": "#bd74b3"
+                }
+            },
+            {
+                "scope": [ // <!-- comment -->
+                    "comment.block.html",
+                    "comment.block.html punctuation.definition.comment.html"
+                ],
+                "settings": {
+                    "foreground": "#6A9955"
+                }
+            },
+        ]
+    },
+    "intelephense.files.exclude": [
+        "**/.svn/**",
+        "**/.hg/**",
+        "**/CVS/**",
+        "**/.DS_Store/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**/{Tests,tests}/**",
+        "**/.history/**",
+        "**/vendor/**/vendor/**"
+    ],
+    "markdown.preview.fontSize": 15,
+    "bladeFormatter.format.sortHtmlAttributes": "vuejs",
+    "bladeFormatter.format.wrapAttributes": "force-aligned",
+    "html.format.wrapAttributes": "force-aligned",
+    // "php.debug.executablePath": "",
+    "update.mode": "none",
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.title": "${rootName} -- ${dirty}${activeEditorShort}${separator}${separator}${profileName}${separator}${appName}",
+    "typescript.updateImportsOnFileMove.enabled": "always"
+}
